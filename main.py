@@ -23,9 +23,9 @@ def read_file(file_name):
             question_phrases.append(input_phrase.strip())
         return question_phrases
     except FileNotFoundError:
-        print(f"No file found with name: {file_name}")
+        print("No file found with name: {}".format(file_name))
     except Exception as err:
-        print(f"Unable to open the file due to error: {err}")
+        print("Unable to open the file due to error: {}".format(err))
     # Quit the program if any file reading is not successful
     quit()
 
@@ -65,12 +65,12 @@ def main():
         try:
             output = call_the_api(input_phrase, session_id)
         except Exception as err:
-            output = [input_phrase, f"Unable to get output due to err: {err}"]
+            output = [input_phrase, "Unable to get output due to err: {}".format(err)]
 
         write_to_file(output, output_file_name)
         sleep(1)
 
-    print(f"Output stored to file: {output_file_name}")
+    print("Output stored to file: {}".format(output_file_name))
 
 
 if __name__ == '__main__':
