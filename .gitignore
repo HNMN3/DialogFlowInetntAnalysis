@@ -1,2 +1,6 @@
 Dialo_env
 .idea
+*csv
+*json
+__pycache__
+denv/
