@@ -1,9 +1,9 @@
-#DialogFlowAgentAnalysis
-##Requirements:
+# DialogFlowAgentAnalysis
+## Requirements:
 	- Python3
 	- A machine(vitual or physical) with Ubuntu 16 or higher.
 
-##Steps to deploy the code:
+## Steps to deploy the code:
 
 - Login to the instance
 - Clone the repo on instance using following command: (you would need the repo access. provide your github id to nitin and he will allow the repo access to you)
