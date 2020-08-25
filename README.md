@@ -19,7 +19,7 @@ chmod +x setup.sh
 - Provide the required details in the env variable using following command:
 	(this step needs to be performed again if you logout from machine)
 ```shell script
-export PROJECT_ID="project_id_here_in_qutoes"
+export PROJECT_ID="project_id_here"
 export GOOGLE_APPLICATION_CREDENTIALS="path_to_credential_file_here"
 ```
 - Make sure that the input is given in the file named "input.csv"
