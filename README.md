@@ -1,6 +1,7 @@
 #DialogFlowAgentAnalysis
 ##Requirements:
 	- Python3
+	- A machine(vitual or physical) with Ubuntu 16 or higher.
 
 ##Steps to deploy the code:
 
