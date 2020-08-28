@@ -22,5 +22,5 @@
 > export GOOGLE_APPLICATION_CREDENTIALS="path_to_credential_file_here"
 * Make sure that the input is given in the file named "input.csv".
 * Run the program using following command:
-> python3 main.py
+> python3 main.py INPUT_FILE_PATH
 	 

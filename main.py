@@ -7,7 +7,7 @@ import dialogflow_v2 as dialogflow
 from google.api_core.exceptions import InvalidArgument
 from tqdm import trange
 
-from constants import (INPUT_FILE, OUTPUT_FILE, DIALOGFLOW_PROJECT_ID,
+from constants import (OUTPUT_FILE, DIALOGFLOW_PROJECT_ID,
                        DIALOGFLOW_LANGUAGE_CODE)
 
 
@@ -53,7 +53,12 @@ def write_to_file(output_row, output_file):
 
 
 def main():
-    input_phrases = read_file(INPUT_FILE)
+    arguments = sys.argv
+    if len(arguments) != 2:
+        print("Usage: python3 main.py INPUT_FILE_PATH")
+        quit()
+    input_file = arguments[1]
+    input_phrases = read_file(input_file)
     input_phrases_len = len(input_phrases)
     session_id = str(uuid.uuid4())
     output_file_name = OUTPUT_FILE.format(session_id)
